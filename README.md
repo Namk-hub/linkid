@@ -2,6 +2,7 @@
 ### Your professional identity, simplified.
 
 LinkID lets you share **clean, predictable, platform-specific links** using a single username.
+https://linkid.qzz.io/vishnu/
 
 Stop pasting long URLs everywhere.  
 Share links like:
