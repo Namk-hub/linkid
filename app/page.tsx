@@ -12,6 +12,12 @@ import {
   Linkedin,
   Code2,
   ArrowUpRight,
+  Wand2,
+  User,
+  BarChart3,
+  Globe,
+  Moon,
+  Shield,
 } from "lucide-react";
 import React from "react";
 
@@ -61,33 +67,173 @@ export default async function Home() {
 
       <section className="py-24 md:py-28 bg-muted/40" id="features">
         <div className="mx-auto max-w-7xl px-6">
+          {/* Stats Section */}
+          <div className="mb-16 md:mb-24">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">10+</div>
+                <div className="text-sm md:text-base text-muted-foreground">Platforms Supported</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">∞</div>
+                <div className="text-sm md:text-base text-muted-foreground">Custom Links</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">1min</div>
+                <div className="text-sm md:text-base text-muted-foreground">Setup Time</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100%</div>
+                <div className="text-sm md:text-base text-muted-foreground">Free Forever</div>
+              </div>
+            </div>
+          </div>
+
           <div className="mb-14 md:mb-20 max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
               Why developers love LinkID
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Built for resumes, forms, and professional workflows.
+              Built for developers, job seekers, and professionals who value clean, predictable links.
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <FeatureCard
               icon={<Link2 className="h-5 w-5 md:h-6 md:w-6" />}
               title="Resume-friendly links"
-              desc="Short, readable URLs that look clean and professional on resumes."
+              desc="Short, readable URLs that look clean and professional on resumes and portfolios."
             />
 
             <FeatureCard
               icon={<Route className="h-5 w-5 md:h-6 md:w-6" />}
               title="Platform routing"
-              desc="Predictable links like /github, /linkedin, /leetcode."
+              desc="Predictable links like /github, /linkedin, /leetcode for every professional platform."
             />
 
             <FeatureCard
               icon={<Zap className="h-5 w-5 md:h-6 md:w-6" />}
               title="One-time setup"
-              desc="Add links once. Share everywhere. Update anytime."
+              desc="Add links once. Share everywhere. Update anytime without breaking existing links."
             />
+
+            <FeatureCard
+              icon={<Wand2 className="h-5 w-5 md:h-6 md:w-6" />}
+              title="Auto platform detection"
+              desc="Paste any URL and LinkID automatically detects the platform and formats it correctly."
+            />
+
+            <FeatureCard
+              icon={<User className="h-5 w-5 md:h-6 md:w-6" />}
+              title="Public profile page"
+              desc="Shareable profile at linkid.qzz.io/username showcasing all your professional links."
+            />
+
+            <FeatureCard
+              icon={<BarChart3 className="h-5 w-5 md:h-6 md:w-6" />}
+              title="Real-time dashboard"
+              desc="Add, edit, and delete links instantly with a responsive, intuitive interface."
+            />
+
+            <FeatureCard
+              icon={<Globe className="h-5 w-5 md:h-6 md:w-6" />}
+              title="Multi-platform support"
+              desc="GitHub, LinkedIn, LeetCode, YouTube, Twitter, and 10+ other platforms supported."
+            />
+
+            <FeatureCard
+              icon={<Moon className="h-5 w-5 md:h-6 md:w-6" />}
+              title="Dark mode ready"
+              desc="Full system theme support with light and dark modes for comfortable viewing."
+            />
+
+            <FeatureCard
+              icon={<Shield className="h-5 w-5 md:h-6 md:w-6" />}
+              title="Secure & private"
+              desc="OAuth authentication with Google & GitHub. Your data stays secure and private."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 md:py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-14 md:mb-20 max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+              Loved by developers worldwide
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              See what developers are saying about LinkID
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-2xl border bg-card p-6 md:p-8">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "LinkID transformed how I share my professional links. Instead of long, messy URLs, I now have clean, predictable links that look great on my resume."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-primary">SD</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">Sarah Davis</div>
+                  <div className="text-sm text-muted-foreground">Frontend Developer</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border bg-card p-6 md:p-8">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "The auto platform detection is a game-changer. I just paste my GitHub URL and it automatically formats it perfectly. Setup took less than a minute!"
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-primary">MJ</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">Marcus Johnson</div>
+                  <div className="text-sm text-muted-foreground">Full Stack Developer</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border bg-card p-6 md:p-8 md:col-span-2 lg:col-span-1">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "As someone who applies to jobs frequently, having clean, professional links makes a huge difference. LinkID has become an essential part of my job search toolkit."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-primary">AL</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">Alex Lee</div>
+                  <div className="text-sm text-muted-foreground">Software Engineer</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -163,12 +309,12 @@ function FeatureCard({
   desc: string;
 }) {
   return (
-    <div className="rounded-2xl border bg-card p-6 md:p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
-      <div className="mb-4 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-muted text-foreground">
+    <div className="group rounded-2xl border bg-card p-6 md:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/5 hover:border-primary/20">
+      <div className="mb-4 flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 text-primary group-hover:scale-110 transition-transform duration-300">
         {icon}
       </div>
 
-      <h3 className="text-lg md:text-xl font-semibold mb-2 text-foreground">
+      <h3 className="text-lg md:text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
         {title}
       </h3>
 
