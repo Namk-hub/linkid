@@ -3,6 +3,9 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import prisma from "@/lib/prisma";
+import QRCodeButton from "@/components/ui/QRCodeButton";
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://linkid.qzz.io";
 
 async function generateQRCode() {
     try {
@@ -22,9 +25,5 @@ async function generateQRCode() {
 
 export default async function QRCode() {
     const qrCode = await generateQRCode();
-    return (
-        <div className="flex justify-center">
-            <img src={qrCode} alt="QR Code" />
-        </div>
-    );
+    return <QRCodeButton qrCode={qrCode ?? ""} />;
 }

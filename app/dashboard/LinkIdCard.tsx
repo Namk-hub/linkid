@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Copy, Check, ExternalLink, Link2 } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import QRCode from "./qrcode";
 
 export function LinkIdCard({ username, qrCode }: { username: string }) {
   const [copied, setCopied] = useState(false);
