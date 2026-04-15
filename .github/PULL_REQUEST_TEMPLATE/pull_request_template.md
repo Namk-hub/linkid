@@ -1,5 +1,9 @@
 # Pull Request
 
+⚠️ Important: This project is part of NSoC'26.
+All contributors must include "NSoC'26" in their PR title or description.
+PRs without this tag may not be reviewed.
+
 ## 📋 Summary
 
 <!-- A short, clear description of what this PR does -->
