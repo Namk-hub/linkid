@@ -4,7 +4,7 @@ import { Copy, Check, ExternalLink, Link2 } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-export function LinkIdCard({ username, qrCode }: { username: string }) {
+export function LinkIdCard({ username, qrCode }: { username: string; qrCode?: React.ReactNode }) {
   const [copied, setCopied] = useState(false);
 
   function copyProfile() {
