@@ -178,7 +178,7 @@ export default async function Home() {
                 ))}
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                "LinkID transformed how I share my professional links. Instead of long, messy URLs, I now have clean, predictable links that look great on my resume."
+                &ldquo;LinkID transformed how I share my professional links. Instead of long, messy URLs, I now have clean, predictable links that look great on my resume.&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -200,7 +200,7 @@ export default async function Home() {
                 ))}
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                "The auto platform detection is a game-changer. I just paste my GitHub URL and it automatically formats it perfectly. Setup took less than a minute!"
+                &ldquo;The auto platform detection is a game-changer. I just paste my GitHub URL and it automatically formats it perfectly. Setup took less than a minute!&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -213,7 +213,7 @@ export default async function Home() {
               </div>
             </div>
 
-            <div className="rounded-2xl border bg-card p-6 md:p-8 md:col-span-2 lg:col-span-1">
+            <div className="rounded-2xl border bg-card p-6 md:p-8">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -222,7 +222,7 @@ export default async function Home() {
                 ))}
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                "As someone who applies to jobs frequently, having clean, professional links makes a huge difference. LinkID has become an essential part of my job search toolkit."
+                &ldquo;As someone who applies to jobs frequently, having clean, professional links makes a huge difference. LinkID has become an essential part of my job search toolkit.&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -232,6 +232,94 @@ export default async function Home() {
                   <div className="font-semibold text-foreground">Alex Lee</div>
                   <div className="text-sm text-muted-foreground">Software Engineer</div>
                 </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border bg-card p-6 md:p-8">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                &ldquo;The dashboard is incredibly intuitive. I can manage all my professional links in one place and see real-time updates. Perfect for staying organized!&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-primary">RK</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">Rachel Kim</div>
+                  <div className="text-sm text-muted-foreground">DevOps Engineer</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border bg-card p-6 md:p-8">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                &ldquo;Dark mode support is fantastic! As a developer who works late hours, having a comfortable viewing experience makes all the difference.&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-primary">JT</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">James Thompson</div>
+                  <div className="text-sm text-muted-foreground">Mobile Developer</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border bg-card p-6 md:p-8">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                &ldquo;LinkID's security features give me peace of mind. OAuth authentication and data privacy are exactly what I need for managing my professional presence.&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-primary">LW</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">Lisa Wang</div>
+                  <div className="text-sm text-muted-foreground">Security Engineer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action for Feedback */}
+          <div className="mt-16 text-center">
+            <div className="rounded-2xl border bg-gradient-to-br from-primary/5 to-primary/10 p-8 md:p-12">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Share Your Experience
+              </h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Help us improve LinkID by sharing your feedback. Your input helps us build better tools for developers worldwide.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" variant="outline" asChild>
+                  <Link href="https://github.com/your-repo/discussions" target="_blank">
+                    Leave Feedback
+                  </Link>
+                </Button>
+                <Button size="lg" asChild>
+                  <Link href="/login">Join the Community</Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -288,11 +376,118 @@ export default async function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-border px-4 py-6 sm:py-8 text-center text-xs sm:text-sm text-muted-foreground">
-        © {new Date().getFullYear()} LinkID - Built for developers & job seekers
-        <span className="block sm:inline sm:mx-1">
-          by <span className="font-medium text-foreground">Vishnu Kothakapu</span>
-        </span>
+      <footer className="border-t border-border bg-muted/20">
+        <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {/* Brand Section */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
+                  <Link2 className="h-4 w-4 text-primary-foreground" />
+                </div>
+                <span className="text-xl font-bold text-foreground">LinkID</span>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                One identity. Infinite professional links. Built for developers who value clean, predictable URLs.
+              </p>
+              <div className="flex items-center gap-4">
+                <Link
+                  href="https://github.com/your-repo"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Github className="h-5 w-5" />
+                </Link>
+                <Link
+                  href="https://twitter.com/your-handle"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Product Links */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-semibold text-foreground">Product</h3>
+              <div className="space-y-3">
+                <Link href="/dashboard" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Dashboard
+                </Link>
+                <Link href="#features" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Features
+                </Link>
+                <Link href="#demo" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Demo
+                </Link>
+                <Link href="/login" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Get Started
+                </Link>
+              </div>
+            </div>
+
+            {/* Support Links */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-semibold text-foreground">Support</h3>
+              <div className="space-y-3">
+                <Link href="https://github.com/your-repo/issues" target="_blank" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Report Issue
+                </Link>
+                <Link href="https://github.com/your-repo/discussions" target="_blank" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Community
+                </Link>
+                <Link href="/docs" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Documentation
+                </Link>
+                <Link href="mailto:support@linkid.qzz.io" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+
+            {/* Company Links */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-semibold text-foreground">Company</h3>
+              <div className="space-y-3">
+                <Link href="/about" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  About
+                </Link>
+                <Link href="/privacy" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link href="/terms" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Terms of Service
+                </Link>
+                <Link href="/status" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Status
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Section */}
+          <div className="mt-8 pt-8 border-t border-border">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-sm text-muted-foreground">
+                © {new Date().getFullYear()} LinkID. Built with ❤️ by{" "}
+                <span className="font-medium text-foreground">Vishnu Kothakapu</span>
+              </p>
+              <div className="flex items-center gap-6 text-sm text-muted-foreground">
+                <span className="flex items-center gap-1">
+                  <Shield className="h-4 w-4" />
+                  Secure & Private
+                </span>
+                <span className="flex items-center gap-1">
+                  <Globe className="h-4 w-4" />
+                  100% Free
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
 
     </>
