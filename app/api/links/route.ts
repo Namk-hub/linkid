@@ -2,18 +2,23 @@ import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import prisma from "@/lib/prisma";
+
 import {
     detectPlatform,
     normalizeUrl,
     validatePlatformUrl,
 } from "@/lib/platforms";
+
 import { isValidHttpUrl } from "@/lib/url";
 
 export async function POST(req: Request) {
     const session = await getServerSession(authOptions);
 
     if (!session?.user?.email) {
-        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+        return NextResponse.json(
+            { error: "Unauthorized" },
+            { status: 401 }
+        );
     }
 
     const body = await req.json();
@@ -33,17 +38,8 @@ export async function POST(req: Request) {
             { status: 400 }
         );
     }
+
     const finalUrl = normalizeUrl(rawUrl);
-    if (
-        finalUrl.includes("/messaging/") ||
-        finalUrl.includes("/feed")
-    ) {
-        return NextResponse.json(
-            {error: "Please enter a valid public link"},
-            {status: 400}
-        );
-    }
-    
     const detectedPlatform = detectPlatform(finalUrl);
 
     if (!detectedPlatform) {
@@ -77,20 +73,9 @@ export async function POST(req: Request) {
             detectedPlatform.slice(1);
     }
 
-    //block non-public link  
-    if (
-        finalUrl.includes("/messaging/") ||
-        finalUrl.includes("/feed/")
-    ) {
-        return NextResponse.json(
-           { error: "Please enter a valid public link" },
-           { status: 400 }
-        );
-    }
-
     if (!validatePlatformUrl(detectedPlatform, finalUrl)) {
         return NextResponse.json(
-            { error: `Invalid ${finalLabel} URL` },
+            { error: "Please enter a valid public link" },
             { status: 400 }
         );
     }
@@ -100,7 +85,10 @@ export async function POST(req: Request) {
     });
 
     if (!user) {
-        return NextResponse.json({ error: "User not found" }, { status: 404 });
+        return NextResponse.json(
+            { error: "User not found" },
+            { status: 404 }
+        );
     }
 
     const maxOrder = await prisma.link.aggregate({
@@ -129,10 +117,10 @@ export async function POST(req: Request) {
         }
 
         console.error(err);
+
         return NextResponse.json(
             { error: "Something went wrong" },
             { status: 500 }
         );
     }
-
 }
