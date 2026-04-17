@@ -2,16 +2,10 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ProfileHeader } from "./ProfileHeader";
 import { ProfileLinks } from "./ProfileLinks";
 import { ProfileCTA } from "./ProfileCTA";
+import { User } from "./types/type";    
 
-export function ProfileCard({
-    user,
-    username,
-    showCTA,
-}: {
-    user: any;
-    username: string;
-    showCTA: boolean;
-}) {
+export function ProfileCard(props: User) {
+    const { user, username, showCTA } = props;
     return (
         <Card className="shadow-lg">
             <CardHeader className="pb-2">

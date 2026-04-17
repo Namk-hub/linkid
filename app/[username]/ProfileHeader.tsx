@@ -1,10 +1,7 @@
-export function ProfileHeader({
-    name,
-    username,
-}: {
-    name?: string | null;
-    username: string;
-}) {
+import type { ProfileHeader } from "./types/type";
+
+export function ProfileHeader(props: ProfileHeader) {
+    const { name, username } = props;
     return (
         <div className="text-center space-y-2">
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-muted text-2xl font-bold">
