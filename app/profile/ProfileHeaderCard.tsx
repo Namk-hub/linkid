@@ -44,7 +44,7 @@ export function ProfileHeaderCard({
                         })}
                     </p>
                     {user.bio && (
-                        <p className="text-sm text-muted-foreground mt-2">
+                        <p className="text-sm text-muted-foreground mt-2 wrap-break-word">
                             {user.bio}
                         </p>
                     )}
