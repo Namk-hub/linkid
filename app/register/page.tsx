@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
-import { Icon } from "@iconify/react";
+import { Mail, Lock, User, Eye } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -101,7 +101,7 @@ export default function RegisterPage() {
                         
   {/* --- Full Name --- */}
   <div className="relative flex items-center mb-4">
-    <Icon icon="solar:user-bold" className="absolute left-3 text-gray-400" width="20" />
+    <User className="absolute left-3 text-gray-400" size={20} /> 
     <Input 
       name="name"
       placeholder="Full name"
@@ -112,7 +112,7 @@ export default function RegisterPage() {
 
   {/* --- Email --- */}
   <div className="relative flex items-center mb-4">
-    <Icon icon="clarity:email-solid" className="absolute left-3 text-gray-400" width="20" />
+    <Mail className="absolute left-3 text-gray-400" width="20" />
     <Input 
       name="email"
       type="email"
@@ -124,7 +124,7 @@ export default function RegisterPage() {
 
   {/* --- Password --- */}
   <div className="relative flex items-center">
-    <Icon icon="solar:lock-password-bold" className="absolute left-3 text-gray-400" width="20" />
+    <Lock className="absolute left-3 text-gray-400" width="20" />
     <Input 
       name="password"
       type="password"
@@ -134,7 +134,7 @@ export default function RegisterPage() {
       required
       className={`pl-10 pr-10 bg-[#1a1a1a] border-gray-800 focus:border-purple-500 ${password && error ? "border-red-500" : ""}`}
     />
-    <Icon icon="solar:eye-bold" className="absolute right-3 text-gray-400 cursor-pointer hover:text-white" width="20" />
+    <Eye className="absolute right-3 text-gray-400 cursor-pointer hover:text-white" width="20" />
   </div>
 
   {password && error && (
